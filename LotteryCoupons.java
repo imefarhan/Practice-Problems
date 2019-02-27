@@ -1,13 +1,13 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class ttttttttttttt {
+/*Asked in a HackerRank test. Passed 100% of test cases. Difficulty level=Medium*/
+
+public class LotteryCoupons {
 
 	public static void main(String[] args) {
 		
 		System.out.println("\nAnswer :"+lotteryCoupons(11));
-		
-//		System.out.println("con :"+consecutive(200));
 	}
 	
 	public static int lotteryCoupons(int n) {
@@ -35,16 +35,16 @@ public class ttttttttttttt {
 	        else
 	            hm.put(ar[ii], 1);
 	    }
-System.out.println(hm.toString());
-	int max = -1;
+		
+	    int max = -1;
 	    for(Map.Entry m : hm.entrySet())
 	    {
 	        int val = Integer.parseInt(m.getValue().toString());
 	        if(val > max)
 	            max = val;
 	    }
-System.out.println("Max :"+max);	    
-	int res = 0;
+	    
+            int res = 0;
 	    for(Map.Entry m : hm.entrySet())
 	    {
 	        int val = Integer.parseInt(m.getValue().toString());
@@ -66,30 +66,4 @@ System.out.println("Max :"+max);
 
 	        return sum;    
 	    }
-	    
-//	    public static int consecutive(long num) {
-//	        // Write your code here
-//
-//	            long start = (num/2) + 1;
-//	            int count = 0;
-//	            for(long i=start; i>0; i--)
-//	            {
-//	                long j = i;
-//	                //j--;
-//	                long sum = 0;
-//	                while(sum<num && j>0)
-//	                {
-//	                    sum += j;
-//	                    j--;
-//	                    
-//	                    if(sum==num)
-//	                        count++;
-//	                }
-//	            }
-//
-//	            return count;
-//
-//	        }
-
-
 }
